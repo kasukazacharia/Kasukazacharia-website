@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student submission</title>
+</head>
+<body>
+    <h1>FORM THAT USED TO ADD NEW STUDENT </h1>
+    <p>The student should fill these later information in order to join our school</p>
+   
+<div class="form-container">
+<h2>Form for the new student</h2>
+<p class="subtitle">Please fill your informations correctly</p>
+<form action="#" method="POST">
+
+<div class="form-group">
+<label for="firstName">First Name:</label>
+<input type="text" id="firstName" name="firstName" placeholder="Emmanuel" required> 
+</div>
+<br>
+
+<div class="form-group">
+<label for="secondName">Second Name:</label>
+<input type="text" id="secondName" name="secondName" placeholder="Bernad" required>
+</div>
+<br>
+
+<div class="form-group">
+<label for="lastName">Last Name:</label>
+<input type="text" id="lastName" name="lastName" placeholder="Mavinya" required>
+</div>
+<br>
+
+<div class="form-group">
+<label for="dob">Date of Birth:</label>
+<input type="date" id="dob" name="dob" required>
+</div>
+<br>
+<div class="form-group">
+<label for="age">Age:</label>
+<input type="number" id="age" name="age" placeholder="Years" min="1" max="100" required>
+</div>
+<br>
+
+<div class="form-group">
+<label for="gender">Gender:</label>
+<select id="gender" name="gender" required>
+<option value="">Choose gender</option>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+</select>
+</div>
+<br>
+
+<div class="form-group">
+<label for="previousSchool">Name of School Come From:</label>
+<input type="text" id="previousSchool" name="previousSchool" placeholder="Name of previous School" required>
+</div>
+<br>
+
+<div class="form-group">
+<label for="indexNumber">Index Number:</label>
+<input type="text" id="indexNumber" name="indexNumber" placeholder="eg: S0101/0001/2023" required>
+</div>
+<br>
+<div class="form-group">
+<label for="regNo">Registration No:</label>
+<input type="text" id="regNo" name="regNo" placeholder="Reg no." required>
+</div>
+<br>
+
+<div class="form-group">
+<label for="stream">Stream:</label>
+<select id="stream" name="stream" required>
+<option value="">Choose your sream </option>
+<option value="Science">Science</option>
+<option value="Arts">Arts</option>
+<option value="Commercial">Commercial</option>
+</select>
+</div>
+<br>
+<div class="form-group">
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="kasukazacharia@gmail.com" required>
+</div>
+<br>
+<div class="form-group">
+<label for="address">Address:</label>
+<input type="text" id="address" name="address" placeholder="(eg: P.O. Box 123, Mbeya)" required>
+</div>
+<br>
+<div class="form-group">
+<label for="parentPhone">Parent's Phone Number:</label>
+<input type="tel" id="parentPhone" name="parentPhone" placeholder="07........" required>
+</div>
+<br>
+<button type="submit" class="submit-btn">Submit</button>
+</form>
+</div>
+<style>
+    body {
+        background-color:aquamarine;
+        justify-content: center;
+        align-items: center;
+        font-style: oblique;
+        font-weight: 200px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: larger;
+        
+        .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: rgb(71, 15, 175);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+        
+    }
+</style>
+    
+</body>
+</html>

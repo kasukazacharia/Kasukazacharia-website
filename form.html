@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student submission form </title>
+</head>
+<body>
+    <div class="form-container">
+    <h2>Student submission form</h2>
+    <form action="#" method="POST">
+        
+        <div class="form-group">
+            <label for="fullName">Full name :</label>
+            <input type="text" id="fullName" name="fullName" placeholder="eg: Juma Ali" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">phone number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="07XXXXXXXX" required>
+        </div>
+
+        <div class="form-group">
+            <label for="dob"> birth date :</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Choose gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="course">Course / Education:</label>
+            <input type="text" id="course" name="course" placeholder="Example: Computer Engineering" required>
+        </div>
+
+        <button type="submit" class="submit-btn">Submitt informations</button>
+
+    </form>
+</div>
+stl
+<style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(122, 119, 119);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: whitesmoke;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(105, 119, 43, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: blueviolet;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input, 
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-group input:focus, 
+.form-group select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: blue;
+}
+</style>
+    
+</body>
+</html>

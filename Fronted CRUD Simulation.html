@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend CRUD Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="crud-container">
+        <h2>Student Information System (CRUD Simulation)</h2>
+
+        <!-- FORM FOR ADDING / EDITING DATA (CREATE / UPDATE) -->
+        <form id="studentForm">
+            <input type="hidden" id="studentIndex" value=""> <!-- Used during updates -->
+            
+            <div class="form-group">
+                <label for="fullName">fullName:</label>
+                <input type="text" id="fullName" placeholder="e.g., John Doe" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="GENDER">GENDER:</label>
+                <select id="gender" required>
+                    <option value="MALE">MALE</option>
+                    <option value="FEMALE">FEMALE</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="course">indexNo:</label>
+                <input type="text" id="indexNo" placeholder="e.g., 12356278886" required>
+            </div>
+
+            <div class="form-group">
+                <label for="stream">stream:</label>
+                <select id="stream" required>
+                    <option value="Science">Science</option>
+                    <option value="Commercial">Commercial</option>
+                    <option value="Arts">Arts</option>   
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="email">email:</label>
+                <input type="text" id="email" placeholder="e.g. zacharia@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">address:</label>
+                <input type="text" id="address" placeholder="e.g. IYUNGA, MBEYA" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">phone:</label>
+                <input type="text" id="phone" placeholder="e.g. 0796780962" required>
+            </div>
+
+            <button type="submit" id="submitBtn">Add Student</button>
+        </form>
+
+        <hr>
+
+        <!-- TABLE FOR DISPLAYING DATA (READ / DELETE / EDIT) -->
+        <h3>Student List</h3>
+        <div style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>S/N</th>
+                        <th>fullname</th>
+                        <th>gender</th>
+                        <th>indexNo</th>
+                        <th>stream</th>
+                        <th>email</th>
+                        <th>address</th>
+                        <th>phone</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="studentTableBody">
+                    <!-- Data will be populated here via JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <style>
+        h3 {
+            color: blue;
+        }
+    </style>
+</body>
+</html>

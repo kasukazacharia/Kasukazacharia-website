@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about school</title>
+</head>
+<body>
+    <div class="contact-container">
+    <h2>Contact Us</h2>
+    <p class="subtitle">We are here to answer your questions and provide any assistance you need.</p>
+
+    <div class="contact-wrapper">
+        
+    
+        <div class="contact-info">
+            <h3>School Information</h3>
+            
+            <div class="info-item">
+                <strong>Postal Address:</strong>
+                <p>P.O. Box 131, Mbeya, Tanzania</p>
+            </div>
+
+            <div class="info-item">
+                <strong>Phone Numbers:</strong>
+                <p>+25579678062/ </p>
+                <p>+255776690294</p>
+            </div>
+
+            <div class="info-item">
+                <strong>Email Address:</strong>
+                <p>iyunga@shuleyetu.ac.tz</p>
+            </div>
+
+            <div class="info-item">
+                <strong>Working Hours:</strong>
+                <p>Monday - Friday: 8:00 AM - 4:00 PM</p>
+            </div>
+        </div>
+
+    
+        <form action="#" method="POST" class="contact-form">
+            <h3>Send Us a Message</h3>
+
+            <div class="form-group">
+                <label for="senderName">Full Name:</label>
+                <input type="text" id="senderName" name="senderName" placeholder="e.g., John Doe" required>
+            </div>
+
+            <div class="form-group">
+                <label for="senderEmail">Email Address:</label>
+                <input type="email" id="senderEmail" name="senderEmail" placeholder="example@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="e.g., Fee Inquiry" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+    </div>
+
+
+    <div class="map-container">
+        <h3>Our Location</h3>
+        <iframe 
+        <img src="iyunga.jpg" alt="iyunga photo" width="500px" height="500px">
+            width="100%" 
+            height="300" 
+            style="border:0; border-radius: 8px;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+
+</div>
+<style>
+    .contact-container {
+    background-color: #ffffff;
+    padding: 35px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    min-width: 280px;
+}
+
+.contact-info h3, .contact-form h3, .map-container h3 {
+    margin-bottom: 15px;
+    color: #1a252f;
+}
+
+.info-item {
+    margin-bottom: 15px;
+}
+
+.info-item strong {
+    color: #007bff;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.info-item p {
+    color: #555;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    resize: vertical;
+}
+
+.contact-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+.map-container {
+    margin-top: 20px;
+}
+</style>
+    
+</body>
+</html>
